@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MANOJKAVI J - Resume</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .resume-section {
+      background: #fff;
+      padding: 30px;
+      border: 5px double #333;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 50px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      margin-bottom: 5px;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    section {
+      margin-bottom: 25px;
+    }
+
+    section h2 {
+      color: #444;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    /* Feedback Form Styles */
+    .form-container {
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    .form-container h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 12px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    button {
+      background: #28a745;
+      color: #fff;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #218838;
+    }
+
+    .star-rating {
+      display: flex;
+      gap: 5px;
+      font-size: 30px;
+      cursor: pointer;
+      user-select: none;
+      margin: 10px 0 20px;
+    }
+
+    .star {
+      color: white;
+      text-shadow: 0 0 2px #999;
+      transition: color 0.2s;
+    }
+
+    .star.selected,
+    .star.hovered {
+      color: gold;
+      text-shadow: none;
+    }
+
+    #status {
+      margin-top: 10px;
+      text-align: center;
+      font-weight: bold;
+      color: green;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px dashed #ddd;
+      margin: 50px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="resume-section">
+      <header>
+        <h1>MANOJKAVI J</h1>
+        <p><b>Email:</b> <a href="mailto:manojkavi57@gmail.com">manojkavi57@gmail.com</a></p>
+      </header>
+
+      <section>
+        <h2>Summary</h2>
+        <p>Creative and detail-oriented web developer eager to build modern, user-friendly applications. Skilled in both front-end and back-end development, hands-on project experience.</p>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <ul>
+          <li><strong>Dr. N. G. P Arts and Science College</strong>, Coimbatore, Tamil Nadu — Master of Computer Science<br><small>Jul 2024 - Apr 2026</small></li>
+          <li><strong>Sri Krishna Arts & Science College</strong>, Coimbatore, Tamil Nadu — Bachelor of Computer Science<br><small>Aug 2021 - Apr 2024</small></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <ul>
+          <li>Developed a dynamic Word Puzzle web application using HTML, CSS, and JavaScript.</li>
+          <li>Integrated MySQL for backend data management.</li>
+          <li>Created a Smart Retail application using Python.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Programming Skills</h2>
+        <p><strong>Languages:</strong> HTML, CSS, JavaScript, Python, Java</p>
+        <p><strong>Database:</strong> MongoDB, MySQL</p>
+        <p><strong>Tools:</strong> Power BI</p>
+      </section>
+
+      <section>
+        <h2>Certifications</h2>
+        <ul>
+          <li>Presented a research paper on Payment Detection at the 2nd International Conference</li>
+          <li>Certified in Introduction to AI by Great Learning</li>
+          <li>Completed Java Programming and Fundamentals of Digital Marketing through Coursera</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Languages Known</h2>
+        <p>Tamil - Native</p>
+        <p>English – Intermediate</p>
+      </section>
+
+      <section>
+        <h2>Soft Skills</h2>
+        <ul>
+          <li>Strong problem-solving abilities</li>
+          <li>Effective team collaboration</li>
+          <li>Time management and prioritization</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="form-container">
+      <h2>Feedback Form</h2>
+      <form id="feedback-form">
+        <label>Name:</label>
+        <input type="text" name="name" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Feedback:</label>
+        <textarea name="feedback" required></textarea>
+
+        <label>Rating:</label>
+        <div class="star-rating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div>
+        <input type="hidden" name="rating" id="rating" value="0">
+
+        <button type="submit">Submit</button>
+        <p id="status"></p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const stars = document.querySelectorAll('.star');
+    const ratingInput = document.getElementById('rating');
+
+    stars.forEach((star, index) => {
+      star.addEventListener('mouseenter', () => highlightStars(index));
+      star.addEventListener('mouseleave', () => highlightStars(ratingInput.value - 1));
+      star.addEventListener('click', () => {
+        ratingInput.value = star.dataset.value;
+        highlightStars(index);
+      });
+    });
+
+    function highlightStars(index) {
+      stars.forEach((star, i) => {
+        star.classList.toggle('selected', i <= index);
+      });
+    }
+
+    document.getElementById('feedback-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const data = new FormData(form);
+      const status = document.getElementById('status');
+
+      fetch('https://script.google.com/macros/s/AKfycbzDO1RXJFJtKNixGpUGm33IDhin--iEjkY1_p2shqJue6Gg5PTC7P4k-3lFWncP04i3iQ/exec', {
+        method: 'POST',
+        body: data
+      })
+      .then(response => response.text())
+      .then(result => {
+        status.textContent = "Feedback submitted successfully!";
+        form.reset();
+        ratingInput.value = 0;
+        highlightStars(-1);
+      })
+      .catch(error => {
+        status.textContent = "Error submitting feedback.";
+        console.error(error);
+      });
+    });
+  </script>
+</body>
+</html>
